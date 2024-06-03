@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+html, body {
+	color: #5f6476;
+	background-color: #2b2b2b;
+}
+
+body {
+	padding: 0;
+}
+
+a { color: #2F466A; }
+a:hover { color: #2A63BA; }
+
+.wrap {
+	border: 5px solid #812b2b;
+	border-radius: 10px;
+	max-width: 800px;
+	padding: 5px 14px 5px 12px;
+	box-shadow: 0 0 1px 1px #6e6e6e;
+}
+
+.headerbar {
+	background: none;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 900px;
+	position: relative;
+}
+
+.site-description {
+	float: none;
+	width: auto;
+}
+
+.logo {
+	padding: 0;
+	float: none;
+	display: block;
+}
+
+.site_logo {
+	--logo-width: 900;
+	--logo-height: 147;
+	background-image: url("./images/header.png");
+	aspect-ratio: var(--logo-width) / var(--logo-height);
+	max-width: calc(var(--logo-width) * 1px);
+	background-size: contain;
+	width: auto;
+	height: auto;
+	display: block;
+}
+
+.site-description h1,
+.site-description p {
+	display: none;
+}
+
+.search-header {
+	position: absolute;
+	right: 35px;
+	top: 0;
+	box-shadow: none;
+	margin-top: 14px;
+}
+
+.forumbg, .forabg {
+	background: #862c23;
+}
+
+.navbar {
+	background-color: #eeeeee;
+}
+
+.jumpbox-cat-link {
+	background-color: #2f466a;
+	border-top-color: #2f466a;
+}
+
+.jumpbox-cat-link:hover {
+	background-color: #2a63ba;
+	border-top-color: #2a63ba;
+}
+
+.copyright {
+	color: #888888;
+	margin: 0 auto;
+	padding: 5px;
+	max-width: 900px;
+}
+
+.button {
+	border-color: #2f466a;
+	color: #2f466a;
+}
+
+.button:hover,
+.button:focus {
+	border-color: #2a63ba;
+	background-color: #5E7BAA;
+}
+
+.button .icon,
+.button-secondary {
+	color: #2f466a;
+}
+
+.button-secondary:focus,
+.button-secondary:hover,
+.button:focus .icon,
+.button:hover .icon {
+	color: #2a63ba;
+}
+
+.button-search:hover,
+.button-search-end:hover {
+	border-color: #2a63ba;
+}
+
+.caret	{ border-color: #2f466a; }
+.caret	{ border-color: #2f466a; }
+
+.pagination li.active span {
+	background: #5E7BAA;
+	border-color: #5E7BAA;
+}
+
+.pagination li a:hover,
+.pagination li a:hover .icon,
+.pagination .dropdown-visible a.dropdown-trigger,
+.nojs .pagination .dropdown-container:hover a.dropdown-trigger {
+	background: #5E7BAA;
+	border-color: #5E7BAA;
+}
+
+.inputbox {
+	border-color: #b7b9bd;
+}
+
+.inputbox:hover {
+	border-color: #4880b3;
+}
+
+.inputbox:focus {
+	border-color: #4880b3;
+}
+
+a.button1:hover,
+input.button1:hover,
+a.button2:hover,
+input.button2:hover,
+input.button3:hover {
+	border-color: #3d67a9;
+	color: #3d67a9;
+}
+
+input.button1:focus,
+input.button2:focus,
+input.button3:focus {
+	border-color: #3d67a9;
+	color: #3d67a9;
+}
+
+@media only screen and (max-width: 1220px), only screen and (max-device-width: 1220px) {
+	.wrap {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 700px) {
+	.wrap {
+		border: none;
+		border-radius: 0;
+		padding: 0 5px;
+	}
+
+	li.header dt {
+		text-align: left;
+		text-transform: uppercase;
+	}
+}
